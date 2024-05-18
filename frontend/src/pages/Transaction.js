@@ -19,7 +19,7 @@ export default function Transaction() {
   };
 
   const handleSubmit = () => {
-    setEmbeddedUrl(`https://sam.it/${userAddress}`);
+    setEmbeddedUrl(`http://localhost:3000/addresses/${userAddress}?network=mainnet`);
   };
 
   return (
