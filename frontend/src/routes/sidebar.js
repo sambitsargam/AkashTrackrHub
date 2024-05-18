@@ -22,6 +22,11 @@ const routes = [
     name: "Home", // name that appear in Sidebar
   },
   {
+    path: "/app/blockchain",
+    icon: <UserGroupIcon className="h-6" />,
+    name: "Public Data",
+  },
+  {
     path: "/app/subscribe",
     icon: <StarIcon className="h-6" />,
     name: "Subscribe",
@@ -32,15 +37,11 @@ const routes = [
     icon: <ServerStackIcon className="h-6" />,
     name: " Storage",
   },
+  
   {
-    path: "/app/community",
-    icon: <UserGroupIcon className="h-6" />,
-    name: "Community",
-  },
-  {
-    path: "/app/chat",
+    path: "/app/benchmark",
     icon: <ChatBubbleLeftRightIcon className="h-6" />,
-    name: "Chat",
+    name: "Benchmarking",
   },
   // {
   //   path: "/app/nft",

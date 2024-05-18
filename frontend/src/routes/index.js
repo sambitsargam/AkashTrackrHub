@@ -6,7 +6,7 @@ const Favorite = lazy(() => import("../pages/Favorite"));
 const Setting = lazy(() => import("../pages/Setting"));
 const Sttorage = lazy(() => import("../pages/Storage"));
 const Community = lazy(() => import("../pages/Community"));
-const Chats = lazy(() => import("../pages/Chats"));
+const Chat = lazy(() => import("../pages/Chats"));
 const NFT = lazy(() => import("../pages/NFT"));
 const Assets = lazy(() => import("../pages/Assets"));
 const Resell = lazy(() => import("../pages/Resell"));
@@ -44,12 +44,12 @@ const routes = [
     component: Storage,
   },
   {
-    path: "/community",
+    path: "/blockchain",
     component: Community,
   },
   {
-    path: "/chat",
-    component: Chats,
+    path: "/benchmark",
+    component: Chat,
   },
   {
     path: "/nft",
