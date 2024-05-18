@@ -11,7 +11,7 @@ export const selectedRangeValues: { [key: string]: number } = {
 const productionMainnetApiUrl = "https://api.cloudmos.io";
 const productionTestnetApiUrl = "https://api-testnet.cloudmos.io";
 const productionSandboxApiUrl = "https://api-sandbox.cloudmos.io";
-const productionHostnames = ["stats.akash.network"];
+const productionHostnames = ["akash-trackr-hub.vercel.app"];
 
 export const isProd = process.env.NODE_ENV === "production";
 export const isMaintenanceMode = process.env.MAINTENANCE_MODE === "true";

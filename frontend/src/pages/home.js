@@ -2,54 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Label, Input, Button } from '@windmill/react-ui';
 import axios from 'axios';
-import arweave from 'arweave';
 
 function Home() {
-  const [useArconnect, setUseArconnect] = useState(false);
   const [userAddress, setUserAddress] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
 
-  useEffect(() => {
-    // Define an async function to obtain the user's wallet address
-    const getUserAddress = async () => {
-      try {
-        await window.arweaveWallet.connect(["ACCESS_ADDRESS"]);
-        // Make sure this code is executed inside an async function or a function that handles the promise.
-        const userAddress = await window.arweaveWallet.getActiveAddress();
-        
-        console.log("Your wallet address is", userAddress);
-        setUserAddress(userAddress || '');
-      } catch (error) {
-        console.error("Error while obtaining the user's wallet address:", error);
-        setUserAddress('');
-      }
-    };
-
-    
-
-    // Call the async function to fetch wallet address if useArconnect is true
-    if (useArconnect) {
-      getUserAddress();
-    } else {
-      setUserAddress('');
-    }
-  }, [useArconnect]);
-
-  const handleUseArconnect = () => {
-    setUseArconnect(true);
-  };
-
   const handleSubscribe = async (e) => {
     e.preventDefault();
     // Prepare the data to be sent to the Firebase Realtime Database
     const data = {
-      walletAddress: useArconnect ? userAddress : userAddress.trim(),
-      email: useArconnect ? email.trim() : email,
+      walletAddress: userAddress.trim(),
+      email: email.trim(),
     };
     // Make the POST request to the Firebase Realtime Database
-    axios.post('https://arhubtracker-default-rtdb.firebaseio.com/data.json', data)
+    axios.post('https://akash-ac542-default-rtdb.firebaseio.com/data.json', data)
       .then((response) => {
         alert('Your subscription has been saved successfully! Please check your email (including spam folder)for confirmation.');
         console.log('Response:', response);      })
