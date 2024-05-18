@@ -7,7 +7,7 @@ export default function Hero() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Storage 💾", "NFT 🎨", "Transaction Notification 💬"], // Strings to display
+      strings: ["Transaction Info 💾", "Benchmarking 🎨", "Transaction Notification 💬"], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 300,
       typeSpeed: 100,

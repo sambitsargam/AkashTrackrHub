@@ -40,18 +40,18 @@ const benefitTwo = {
   image: benefitOneImg,
   bullets: [
     {
-      title: "NFT Token",
-      desc: "Mint NFT directly from files saved on AkashTrackrHub ",
+      title: "Blockchain Data",
+      desc: "Get all details regarding the akash network on AkashTrackrHub ",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Chat",
-      desc: "Send  messages with anyone you want using AkashTrackrHub",
+      title: "Benchmarking",
+      desc: "You can benchmark your apiendpoint  using AkashTrackrHub",
       icon: <AdjustmentsVerticalIcon />,
     },
     {
       title: "Hybrid Storage ",
-      desc: "You can host both Jackal servers for free. ",
+      desc: "You can host Jackal servers for free. ",
       icon: <SunIcon />,
     },
   ],
