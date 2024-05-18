@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            AkashaTrckrHub is a powerful web service that offers on-chain transaction notifications and data upload capabilities on the Arweave blockchain. Users can subscribe to their wallet addresses and receive real-time updates whenever transactions occur, making it valuable for traders and developers.
+            AkashaTrckrHub is a powerful web service that offers on-chain transaction notifications & benchmarking.
               <br></br>
               <br></br>
               <p>he service ensures privacy and security by not storing sensitive wallet information and encrypting data exchanges. Additionally, AkashaTrckrHub allows users to seamlessly upload data to Arweave for permanent and decentralized storage, catering to various applications from content archiving to blockchain enthusiasts seeking to monitor their activities.

@@ -18,7 +18,7 @@ const benefitOne = {
   bullets: [
     {
       title: "Transaction Tracker",
-      desc: "Directly track your transaction on Arweave blockchain",
+      desc: "Directly track your transaction on blockchain",
       icon: <FaceSmileIcon />,
     },
     {
